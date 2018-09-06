@@ -16,6 +16,4 @@
 2. 访问http://localhost:8080，用户名和密码都是admin
 
 
-#### 参与贡献
 
-1. 小威老师 xiaoweijiagou@163.com
