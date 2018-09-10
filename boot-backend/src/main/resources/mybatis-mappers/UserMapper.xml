@@ -22,7 +22,7 @@
 		<include refid="where" />
 	</select>
 
-	<select id="list" resultType="User">
+	<select id="list" resultType="com.admin.server.model.User">
 		select * from sys_user t
 		<include refid="where" />
 		${params.orderBy}
