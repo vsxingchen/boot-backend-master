@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.104.187.132:3306/dc_manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
-    username: dc_manage
-    password: dc_manage
+    url: jdbc:mysql://47.104.187.132:3306/backend?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: root
     druid:
       initialSize: 5
       minIdle: 5
@@ -45,7 +45,7 @@ spring:
 #    properties:
 #      mail.smtp.auth: true
 mybatis:
-  type-aliases-package: com.zw.admin.server.model
+  type-aliases-package: com.admin.server.model
   mapper-locations: classpath:/mybatis-mappers/*
   configuration:
     mapUnderscoreToCamelCase: true
@@ -63,7 +63,7 @@ token:
   expire:
     seconds: 86400
 server:
-  port: 8080
+  port: 8090
   servlet:
     session:
       timeout: 30m #30分钟，测试的话时间不能太短，否则不准。m是分钟单位，s是秒的单位，h是小时的单位，不写单位的话默认是毫秒
